@@ -13,3 +13,7 @@ def hello(message):
 def break_time(message):
     message.reply('It\'s break time!')
 
+
+@listen_to(r'.*beer.*')
+def beer(message):
+    message.react('beer')
